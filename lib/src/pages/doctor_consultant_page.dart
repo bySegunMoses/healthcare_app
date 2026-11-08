@@ -8,7 +8,7 @@ import 'package:flutter_healthcare_app/src/theme/extention.dart';
 import 'package:flutter_healthcare_app/src/theme/light_color.dart';
 import 'package:flutter_healthcare_app/src/theme/text_styles.dart';
 import 'package:flutter_healthcare_app/src/theme/theme.dart';
-import 'package:flutter_healthcare_app/src/widgets/DrawerWidget.dart';
+import 'package:flutter_healthcare_app/src/widgets/drawerWidget.dart';
 import 'package:group_radio_button/group_radio_button.dart';
 import 'package:provider/provider.dart';
 import 'package:rating_bar/rating_bar.dart';

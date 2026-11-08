@@ -36,7 +36,7 @@ class _HomePageState extends State<HomePage> {
         Icon(
           Icons.notifications_none,
           size: 30,
-          color: LightColor.grey,
+          color: ColorResources.grey,
         ),
         ClipRRect(
           borderRadius: BorderRadius.all(Radius.circular(13)),
@@ -73,7 +73,7 @@ class _HomePageState extends State<HomePage> {
         borderRadius: BorderRadius.all(Radius.circular(13)),
         boxShadow: <BoxShadow>[
           BoxShadow(
-            color: LightColor.grey.withOpacity(.3),
+            color: ColorResources.grey.withOpacity(.3),
             blurRadius: 15,
             offset: Offset(5, 5),
           )
@@ -87,7 +87,7 @@ class _HomePageState extends State<HomePage> {
           hintStyle: TextStyles.body.subTitleColor,
           suffixIcon: SizedBox(
               width: 50,
-              child: Icon(Icons.search, color: LightColor.purple)
+              child: Icon(Icons.search, color: ColorResources.purple)
                   .alignCenter
                   .ripple(() {}, borderRadius: BorderRadius.circular(13))),
         ),
@@ -119,15 +119,15 @@ class _HomePageState extends State<HomePage> {
             scrollDirection: Axis.horizontal,
             children: <Widget>[
               _categoryCard("Chemist & Drugist", "350 + Stores",
-                  color: LightColor.green, lightColor: LightColor.lightGreen),
+                  color: ColorResources.green, lightColor: ColorResources.lightGreen),
               _categoryCard("Covid - 19 Specialist", "899 Doctors",
-                  color: LightColor.skyBlue, lightColor: LightColor.lightBlue),
+                  color: ColorResources.skyBlue, lightColor: ColorResources.lightBlue),
               _categoryCard("Cardiologists Specialist", "500 + Doctors",
-                  color: LightColor.orange, lightColor: LightColor.lightOrange),
+                  color: ColorResources.orange, lightColor: ColorResources.lightOrange),
               _categoryCard("Dermatologist", "300 + Doctors",
-                  color: LightColor.green, lightColor: LightColor.lightGreen),
+                  color: ColorResources.green, lightColor: ColorResources.lightGreen),
               _categoryCard("General Surgeon", "500 + Doctors",
-                  color: LightColor.skyBlue, lightColor: LightColor.lightBlue)
+                  color: ColorResources.skyBlue, lightColor: ColorResources.lightBlue)
             ],
           ),
         ),
@@ -236,12 +236,12 @@ class _HomePageState extends State<HomePage> {
           BoxShadow(
             offset: Offset(4, 4),
             blurRadius: 10,
-            color: LightColor.grey.withOpacity(.2),
+            color: ColorResources.grey.withOpacity(.2),
           ),
           BoxShadow(
             offset: Offset(-3, 0),
             blurRadius: 15,
-            color: LightColor.grey.withOpacity(.1),
+            color: ColorResources.grey.withOpacity(.1),
           )
         ],
       ),
@@ -287,16 +287,16 @@ class _HomePageState extends State<HomePage> {
     var random = Random();
     final colorList = [
       Theme.of(context).primaryColor,
-      LightColor.orange,
-      LightColor.green,
-      LightColor.grey,
-      LightColor.lightOrange,
-      LightColor.skyBlue,
-      LightColor.titleTextColor,
+      ColorResources.orange,
+      ColorResources.green,
+      ColorResources.grey,
+      ColorResources.lightOrange,
+      ColorResources.skyBlue,
+      ColorResources.titleTextColor,
       Colors.red,
       Colors.brown,
-      LightColor.purpleExtraLight,
-      LightColor.skyBlue,
+      ColorResources.purpleExtraLight,
+      ColorResources.skyBlue,
     ];
     var color = colorList[random.nextInt(colorList.length)];
     return color;
